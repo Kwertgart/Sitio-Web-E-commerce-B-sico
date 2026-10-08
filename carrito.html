@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | TiendaTuxtla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-pagina="carrito.html">
+  <header>
+    <h2 class="logo">🛒 TiendaTuxtla</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="busqueda.html">Búsqueda</a></li>
+        <li class="contador">🛍️ Artículos: <span id="contador-carrito">0</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Carrito de compra</h1>
+      <table>
+        <thead>
+          <tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camisa casual</td>
+            <td class="precio-unit" data-precio="299">$299.00</td>
+            <td><input type="text" class="cantidad" inputmode="numeric" pattern="[0-9]*" maxlength="3" value="1" aria-label="Cantidad de Camisa casual"></td>
+            <td class="subtotal">$299.00</td>
+          </tr>
+          <tr>
+            <td>Tenis deportivos</td>
+            <td class="precio-unit" data-precio="899">$899.00</td>
+            <td><input type="text" class="cantidad" inputmode="numeric" pattern="[0-9]*" maxlength="3" value="1" aria-label="Cantidad de Tenis deportivos"></td>
+            <td class="subtotal">$899.00</td>
+          </tr>
+          <tr>
+            <td>Mochila escolar</td>
+            <td class="precio-unit" data-precio="450">$450.00</td>
+            <td><input type="text" class="cantidad" inputmode="numeric" pattern="[0-9]*" maxlength="3" value="1" aria-label="Cantidad de Mochila escolar"></td>
+            <td class="subtotal">$450.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3"><strong>Total</strong></td><td id="total">$0.00</td></tr>
+        </tfoot>
+      </table>
+      <p class="nota">Solo se permiten números en las cantidades.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 TiendaTuxtla - Proyecto escolar |
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

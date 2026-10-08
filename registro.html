@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | TiendaTuxtla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-pagina="registro.html">
+  <header>
+    <h2 class="logo">🛒 TiendaTuxtla</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="busqueda.html">Búsqueda</a></li>
+        <li class="contador">🛍️ Artículos: <span id="contador-carrito">0</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Registro de usuario</h1>
+      <form id="form-registro" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+
+        <label for="email">Correo electrónico</label>
+        <input type="text" id="email" name="email" placeholder="correo@ejemplo.com"
+               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+               title="Escribe un correo válido, por ejemplo: usuario@dominio.com">
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres"
+               pattern=".{6,}" title="Mínimo 6 caracteres">
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="telefono">Teléfono (10 dígitos)</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="9611234567"
+               pattern="[0-9]{10}" title="Escribe 10 dígitos">
+
+        <label class="check">
+          <input type="checkbox" id="terminos" name="terminos">
+          Acepto los términos y condiciones
+        </label>
+
+        <button type="submit" id="btn-registro" disabled>Registrarme</button>
+        <p id="mensaje-registro" class="mensaje"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 TiendaTuxtla - Proyecto escolar |
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

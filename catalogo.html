@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | TiendaTuxtla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-pagina="catalogo.html">
+  <header>
+    <h2 class="logo">🛒 TiendaTuxtla</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="busqueda.html">Búsqueda</a></li>
+        <li class="contador">🛍️ Artículos: <span id="contador-carrito">0</span></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Catálogo de productos</h1>
+      <p id="mensaje-carrito" class="mensaje"></p>
+      <div class="grid">
+      <article class="producto">
+        <img src="images/camisa.svg" alt="Camisa casual">
+        <h3>Camisa casual</h3>
+        <p class="precio">$299.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Camisa casual">Agregar al carrito</button>
+      </article>
+      <article class="producto">
+        <img src="images/zapatos.svg" alt="Tenis deportivos">
+        <h3>Tenis deportivos</h3>
+        <p class="precio">$899.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Tenis deportivos">Agregar al carrito</button>
+      </article>
+      <article class="producto">
+        <img src="images/mochila.svg" alt="Mochila escolar">
+        <h3>Mochila escolar</h3>
+        <p class="precio">$450.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Mochila escolar">Agregar al carrito</button>
+      </article>
+      <article class="producto">
+        <img src="images/reloj.svg" alt="Reloj clásico">
+        <h3>Reloj clásico</h3>
+        <p class="precio">$1,200.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Reloj clásico">Agregar al carrito</button>
+      </article>
+      <article class="producto">
+        <img src="images/gorra.svg" alt="Gorra urbana">
+        <h3>Gorra urbana</h3>
+        <p class="precio">$150.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Gorra urbana">Agregar al carrito</button>
+      </article>
+      <article class="producto">
+        <img src="images/lentes.svg" alt="Lentes de sol">
+        <h3>Lentes de sol</h3>
+        <p class="precio">$350.00</p>
+        <button type="button" class="btn-agregar" data-nombre="Lentes de sol">Agregar al carrito</button>
+      </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 TiendaTuxtla - Proyecto escolar |
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
